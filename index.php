@@ -1,3 +1,6 @@
 <?php
-echo "<h1>olá mundo</h1>";
+require_once "vendor/autoload.php";
+\Illuminate\Support\Facades\Route::get("/", function(){
+   return "ola mundo meu parceiro"
+});
 ?>
